@@ -8,22 +8,22 @@
 import SwiftUI
 
 public struct CustomSliderComponents {
-    let leftBar: CustomSliderModifier
-    let rightBar: CustomSliderModifier
-    let knob: CustomSliderModifier
+    public let leftBar: CustomSliderModifier
+    public let rightBar: CustomSliderModifier
+    public let knob: CustomSliderModifier
 }
 
-struct CustomSliderModifier: ViewModifier {
-    enum SliderComponentName {
+public struct CustomSliderModifier: ViewModifier {
+    public enum SliderComponentName {
         case leftBar
         case rightBar
         case knob
     }
-    let name: SliderComponentName
-    let size: CGSize
-    let offset: CGFloat
+    public let name: SliderComponentName
+    public let size: CGSize
+    public let offset: CGFloat
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
         .frame(width: size.width)
         .position(x: size.width*0.5, y: size.height*0.5)
