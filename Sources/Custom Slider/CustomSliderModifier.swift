@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomSliderComponents {
+public struct CustomSliderComponents {
     let leftBar: CustomSliderModifier
     let rightBar: CustomSliderModifier
     let knob: CustomSliderModifier

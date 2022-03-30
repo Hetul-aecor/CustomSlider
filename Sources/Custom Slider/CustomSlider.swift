@@ -10,11 +10,11 @@ import SwiftUI
 public struct CustomSlider<Component: View>: View {
 
     @Binding var value: Double
-    var range: (Double, Double)
-    var knobWidth: CGFloat?
-    let viewBuilder: (CustomSliderComponents) -> Component
+    public var range: (Double, Double)
+    public var knobWidth: CGFloat?
+    public let viewBuilder: (CustomSliderComponents) -> Component
 
-    init(value: Binding<Double>, range: (Double, Double), knobWidth: CGFloat? = nil,
+    public init(value: Binding<Double>, range: (Double, Double), knobWidth: CGFloat? = nil,
          _ viewBuilder: @escaping (CustomSliderComponents) -> Component
     ) {
         _value = value
